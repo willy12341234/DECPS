@@ -1,0 +1,33 @@
+{
+  "model": "xgb_clf_final (2000 features)",
+  "n_samples": 12057,
+  "n_features": 2000,
+  "n_incompatible": 3722,
+  "n_compatible": 8335,
+  "test_results": {
+    "accuracy": 0.9,
+    "precision": 0.88,
+    "recall": 0.771,
+    "f1": 0.822,
+    "auc": 0.954,
+    "n_test": 1205
+  },
+  "recommended_threshold": 0.5,
+  "alternative_thresholds": {
+    "high_recall_0.4": {
+      "recall": 0.878,
+      "precision": 0.718,
+      "acc": 0.86
+    },
+    "balanced_0.5": {
+      "recall": 0.837,
+      "precision": 0.793,
+      "acc": 0.885
+    },
+    "high_precision_0.7": {
+      "recall": 0.721,
+      "precision": 0.894,
+      "acc": 0.89
+    }
+  }
+}

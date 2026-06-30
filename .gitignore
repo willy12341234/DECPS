@@ -1,0 +1,28 @@
+# Log files
+*.log
+ml/webapp/*.log
+
+# Environment variables (contains API Keys)
+.env
+.env.local
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Node dependencies & builds
+node_modules/
+ml/frontend/node_modules/
+ml/frontend/dist/
+
+# Local databases and runtime caches
+ml/caches/histories/
+ml/caches/feedbacks.json

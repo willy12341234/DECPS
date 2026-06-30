@@ -1,0 +1,872 @@
+[
+    [
+        "pair_maillard_amine_ester",
+        "[NX3;H2][#6]",
+        "[CX3](=O)[OX2][#6]",
+        "Maillard: API amine + excipient ester"
+    ],
+    [
+        "pair_maillard_amine_aldehyde",
+        "[NX3;H2][#6]",
+        "[CX3H1](=O)[#6]",
+        "Maillard: API amine + excipient aldehyde"
+    ],
+    [
+        "pair_esterification_acid_alcohol",
+        "[CX3](=O)[OH]",
+        "[CX4;H2][OH]",
+        "Esterification: API acid + excipient alcohol"
+    ],
+    [
+        "pair_transesterification",
+        "[CX3](=O)[OX2][#6]",
+        "[CX4;H2][OH]",
+        "Transesterification: API ester + excipient alcohol"
+    ],
+    [
+        "pair_amidation_ester_amine",
+        "[CX3](=O)[OX2][#6]",
+        "[NX3;H2][#6]",
+        "Amidation: API ester + excipient amine"
+    ],
+    [
+        "pair_hydrolysis_ester_acid",
+        "[CX3](=O)[OX2][#6]",
+        "[CX3](=O)[OH]",
+        "Hydrolysis: API ester + excipient acid"
+    ],
+    [
+        "pair_hydrolysis_amide_acid",
+        "[CX3](=O)[NX3]",
+        "[CX3](=O)[OH]",
+        "Hydrolysis: API amide + excipient acid"
+    ],
+    [
+        "pair_hydrolysis_ester_base",
+        "[CX3](=O)[OX2][#6]",
+        "[NX3]([#6])([#6])[#6]",
+        "Hydrolysis: API ester + excipient base (tertiary amine)"
+    ],
+    [
+        "pair_hydrolysis_amide_base",
+        "[CX3](=O)[NX3]",
+        "[NX3]([#6])([#6])[#6]",
+        "Hydrolysis: API amide + excipient base (tertiary amine)"
+    ],
+    [
+        "pair_oxidation_phenol_sulfide",
+        "[OH]c1ccccc1",
+        "[#16X2]([#6])[#6]",
+        "Oxidation: API phenol + excipient thioether"
+    ],
+    [
+        "pair_oxidation_thiol_sulfide",
+        "[SX1H]",
+        "[#16X2]([#6])[#6]",
+        "Oxidation: API thiol + excipient thioether"
+    ],
+    [
+        "pair_oxidation_aniline_sulfide",
+        "[NX3;H2]c1ccccc1",
+        "[#16X2]([#6])[#6]",
+        "Oxidation: API aniline + excipient thioether"
+    ],
+    [
+        "pair_oxidation_aldehyde",
+        "[CX3H1](=O)[#6]",
+        "[#16X2]([#6])[#6]",
+        "Oxidation: API aldehyde + excipient thioether"
+    ],
+    [
+        "pair_oxidation_benzylic",
+        "[c]:[#6][CX4H2]",
+        "[#16X2]([#6])[#6]",
+        "Oxidation: API benzylic CH2 + excipient thioether"
+    ],
+    [
+        "pair_chelation_diketone",
+        "O=[#6][#6][#6]=O",
+        "[CX3](=O)[OH]",
+        "Chelation: API beta-diketone + excipient acid"
+    ],
+    [
+        "pair_chelation_catechol",
+        "[OH]c1c(O)cccc1",
+        "[CX3](=O)[OH]",
+        "Chelation: API catechol + excipient acid"
+    ],
+    [
+        "pair_schiff_base",
+        "[CX3H1](=O)[#6]",
+        "[NX3;H2][#6]",
+        "Schiff base: API aldehyde + excipient amine"
+    ],
+    [
+        "pair_acid_base_rxn",
+        "[CX3](=O)[OH]",
+        "[NX3]([#6])([#6])[#6]",
+        "Acid-base: API acid + excipient base (tertiary amine)"
+    ],
+    [
+        "pair_nitrile_hydrolysis_acid",
+        "[CX2]#[N]",
+        "[CX3](=O)[OH]",
+        "Nitrile hydrolysis: API nitrile + excipient acid → amide/acid"
+    ],
+    [
+        "pair_nitrile_hydrolysis_base",
+        "[CX2]#[N]",
+        "[OH-]",
+        "Nitrile hydrolysis: API nitrile + excipient base/base catalyst"
+    ],
+    [
+        "pair_epoxide_amine_ringopen",
+        "C1OC1",
+        "[NX3;H2][#6]",
+        "Epoxide ring-opening: API epoxide + excipient amine"
+    ],
+    [
+        "pair_epoxide_alcohol_ringopen",
+        "C1OC1",
+        "[CX4;H2][OH]",
+        "Epoxide ring-opening: API epoxide + excipient alcohol"
+    ],
+    [
+        "pair_epoxide_thiol_ringopen",
+        "C1OC1",
+        "[SX1H]",
+        "Epoxide ring-opening: API epoxide + excipient thiol"
+    ],
+    [
+        "pair_epoxide_acid_ringopen",
+        "C1OC1",
+        "[CX3](=O)[OH]",
+        "Epoxide ring-opening: API epoxide + excipient acid"
+    ],
+    [
+        "pair_michael_addition_amine",
+        "[CX3]=[CX3][CX3](=[OX1])",
+        "[NX3;H2][#6]",
+        "Michael addition: API α,β-unsaturated carbonyl + excipient amine"
+    ],
+    [
+        "pair_michael_addition_thiol",
+        "[CX3]=[CX3][CX3](=[OX1])",
+        "[SX1H]",
+        "Michael addition: API α,β-unsaturated carbonyl + excipient thiol"
+    ],
+    [
+        "pair_disulfide_formation",
+        "[SX1H]",
+        "[SX1H]",
+        "Disulfide formation: API thiol + excipient thiol"
+    ],
+    [
+        "pair_hemiacetal_formation",
+        "[CX3H1](=O)[#6]",
+        "[CX4;H2][OH]",
+        "Hemiacetal formation: API aldehyde + excipient alcohol"
+    ],
+    [
+        "pair_acetal_formation_ald_diol",
+        "[CX3H1](=O)[#6]",
+        "[OX2H][#6][CX4][#6][OX2H]",
+        "Acetal formation: API aldehyde + excipient diol"
+    ],
+    [
+        "pair_nitrosamine_formation",
+        "[NX3;H2][#6]",
+        "[NX3](=[OX1])[OX1H]",
+        "Nitrosamine formation: API amine + excipient nitrite/nitrate"
+    ],
+    [
+        "pair_alkylation_amine",
+        "[#6][CX4][Cl,Br,I]",
+        "[NX3;H2][#6]",
+        "Alkylation: API alkyl halide + excipient amine"
+    ],
+    [
+        "pair_alkylation_thiol",
+        "[#6][CX4][Cl,Br,I]",
+        "[SX1H]",
+        "Alkylation: API alkyl halide + excipient thiol"
+    ],
+    [
+        "pair_quinone_amine_michael",
+        "O=C1C=CC(=O)C=C1",
+        "[NX3;H2][#6]",
+        "Quinone-amine: API quinone + excipient amine (Michael addition)"
+    ],
+    [
+        "pair_beta_lactam_amine",
+        "O=C1[CX4][NX3]1",
+        "[NX3;H2][#6]",
+        "β-lactam opening: API β-lactam + excipient amine"
+    ],
+    [
+        "pair_beta_lactam_alcohol",
+        "O=C1[CX4][NX3]1",
+        "[CX4;H2][OH]",
+        "β-lactam opening: API β-lactam + excipient alcohol"
+    ],
+    [
+        "pair_beta_lactam_hydrolysis",
+        "O=C1[CX4][NX3]1",
+        "[OH]",
+        "β-lactam hydrolysis: API β-lactam + water (aqueous excipient)"
+    ],
+    [
+        "pair_sulfonate_ester",
+        "[#16X4](=[OX1])(=[OX1])[OX1H]",
+        "[CX4;H2][OH]",
+        "Sulfonate ester: API sulfonic acid + excipient alcohol"
+    ],
+    [
+        "pair_phosphate_ester",
+        "[#15X4](=[OX1])([OX1H])([OX1H])[OX1H]",
+        "[CX4;H2][OH]",
+        "Phosphate ester: API phosphate + excipient alcohol"
+    ],
+    [
+        "pair_isocyanate_amine_urea",
+        "[NX2]=[CX2]=[OX1]",
+        "[NX3;H2][#6]",
+        "Urea formation: API isocyanate + excipient amine"
+    ],
+    [
+        "pair_isocyanate_alcohol_carbamate",
+        "[NX2]=[CX2]=[OX1]",
+        "[CX4;H2][OH]",
+        "Carbamate formation: API isocyanate + excipient alcohol"
+    ],
+    [
+        "pair_ether_cleavage_acid",
+        "[#6][OX2][#6]",
+        "[CX3](=O)[OH]",
+        "Ether cleavage: API ether + excipient acid"
+    ],
+    [
+        "pair_beta_elimination_base",
+        "[CX4][Cl,Br,I,O][CX4][CX4]",
+        "[NX3]([#6])([#6])[#6]",
+        "β-elimination: API leaving group + excipient base"
+    ],
+    [
+        "pair_halogen_hydrolysis_base",
+        "[#6][Cl,Br,I]",
+        "[OH-]",
+        "Halogen hydrolysis: API alkyl halide + excipient base/water"
+    ],
+    [
+        "pair_diazo_coupling",
+        "[NX2]#[NX2]",
+        "[OH]c1ccccc1",
+        "Diazo coupling: API diazonium + excipient phenol (colored azo)"
+    ],
+    [
+        "pair_diazo_coupling_aniline",
+        "[NX2]#[NX2]",
+        "[NX3;H2]c1ccccc1",
+        "Diazo coupling: API diazonium + excipient aniline (colored azo)"
+    ],
+    [
+        "pair_amide_formation_acid_amine",
+        "[CX3](=O)[OH]",
+        "[NX3;H2][#6]",
+        "Amide formation: API acid + excipient amine"
+    ],
+    [
+        "pair_thioester_formation",
+        "[CX3](=O)[OH]",
+        "[SX1H]",
+        "Thioester formation: API acid + excipient thiol"
+    ],
+    [
+        "pair_hydrazone_formation",
+        "[CX3](=O)[#6]",
+        "[NX3][NX3]",
+        "Hydrazone: API carbonyl + excipient hydrazine"
+    ],
+    [
+        "pair_hydrazone_formation_ald",
+        "[CX3H1](=O)[#6]",
+        "[NX3][NX3]",
+        "Hydrazone: API aldehyde + excipient hydrazine"
+    ],
+    [
+        "pair_oxime_formation",
+        "[CX3](=O)[#6]",
+        "[NX3][OX2H]",
+        "Oxime: API carbonyl + excipient hydroxylamine"
+    ],
+    [
+        "pair_oxime_formation_ald",
+        "[CX3H1](=O)[#6]",
+        "[NX3][OX2H]",
+        "Oxime: API aldehyde + excipient hydroxylamine"
+    ],
+    [
+        "pair_aminal_formation",
+        "[CX3](=O)[#6]",
+        "[NX3;H2][#6]",
+        "Aminal: API carbonyl + excipient amine (gem-diamine)"
+    ],
+    [
+        "pair_enamine_formation",
+        "[CX3](=O)[#6]",
+        "[NX3H][#6][#6]",
+        "Enamine: API carbonyl + excipient secondary amine"
+    ],
+    [
+        "pair_transamidation",
+        "[CX3](=O)[NX3]",
+        "[NX3;H2][#6]",
+        "Transamidation: API amide + excipient amine (exchange)"
+    ],
+    [
+        "pair_anhydride_aminolysis",
+        "[CX3](=O)[OX2][CX3](=O)",
+        "[NX3;H2][#6]",
+        "Anhydride aminolysis: API anhydride + excipient amine"
+    ],
+    [
+        "pair_anhydride_alcoholysis",
+        "[CX3](=O)[OX2][CX3](=O)",
+        "[CX4;H2][OH]",
+        "Anhydride alcoholysis: API anhydride + excipient alcohol"
+    ],
+    [
+        "pair_anhydride_hydrolysis",
+        "[CX3](=O)[OX2][CX3](=O)",
+        "[OH]",
+        "Anhydride hydrolysis: API anhydride + water/OH"
+    ],
+    [
+        "pair_carbamate_hydrolysis",
+        "[CX3](=O)[OX2][NX3]",
+        "[OH]",
+        "Carbamate hydrolysis: API carbamate + water/base"
+    ],
+    [
+        "pair_urea_hydrolysis",
+        "[CX3](=O)[NX3][NX3]",
+        "[OH]",
+        "Urea hydrolysis: API urea + water/base"
+    ],
+    [
+        "pair_thiourea_formation",
+        "[NX2]=[CX2]=[SX1]",
+        "[NX3;H2][#6]",
+        "Thiourea: API isothiocyanate + excipient amine"
+    ],
+    [
+        "pair_isothiocyanate_alcohol",
+        "[NX2]=[CX2]=[SX1]",
+        "[CX4;H2][OH]",
+        "Thiocarbamate: API isothiocyanate + excipient alcohol"
+    ],
+    [
+        "pair_azide_thiol_reduction",
+        "[NX3]=[NX2]=[NX2]",
+        "[SX1H]",
+        "Azide reduction: API azide + excipient thiol → amine"
+    ],
+    [
+        "pair_n_oxide_reduction",
+        "[NX3+][OX1-]",
+        "[SX1H]",
+        "N-oxide reduction: API N-oxide + excipient thiol/reducing agent"
+    ],
+    [
+        "pair_hofmann_elimination",
+        "[N+X4]([#6])([#6])([#6])([#6])",
+        "[OH-]",
+        "Hofmann elimination: API quaternary ammonium + base → alkene"
+    ],
+    [
+        "pair_alkene_epoxidation",
+        "[CX3]=[CX3]",
+        "[#16X2]([#6])[#6]",
+        "Epoxidation: API alkene + excipient peroxide/thioether"
+    ],
+    [
+        "pair_alcohol_oxidation",
+        "[CX4;H2][OH]",
+        "[#16X2]([#6])[#6]",
+        "Alcohol oxidation: API primary alcohol + excipient oxidizing agent"
+    ],
+    [
+        "pair_ether_peroxide",
+        "[#6][OX2][#6]",
+        "[OX2][OX2]",
+        "Ether peroxide: API ether + O2/peroxide (PEG degradation)"
+    ],
+    [
+        "pair_thiazolidine_formation",
+        "[CX3H1](=O)[#6]",
+        "[SX1H][#6][NX3;H2]",
+        "Thiazolidine: API aldehyde + excipient cysteine/thiol-amine"
+    ],
+    [
+        "pair_hemithioacetal",
+        "[CX3H1](=O)[#6]",
+        "[SX1H]",
+        "Hemithioacetal: API aldehyde + excipient thiol"
+    ],
+    [
+        "pair_disulfide_thiol_exchange",
+        "[#16X2][#6]",
+        "[SX1H]",
+        "Disulfide-thiol exchange: API disulfide + excipient thiol"
+    ],
+    [
+        "pair_ketal_formation",
+        "[CX3](=O)[#6]",
+        "[OX2H][#6][CX4][#6][OX2H]",
+        "Ketal formation: API ketone + excipient diol"
+    ],
+    [
+        "pair_amidoxime_formation",
+        "[CX2]#[N]",
+        "[NX3][OX2H]",
+        "Amidoxime: API nitrile + excipient hydroxylamine"
+    ],
+    [
+        "pair_semicarbazone",
+        "[CX3](=O)[#6]",
+        "[NX3][CX3](=O)[NX3]",
+        "Semicarbazone: API carbonyl + excipient semicarbazide"
+    ],
+    [
+        "pair_dehydration_alcohol_acid",
+        "[CX4;H2][OH]",
+        "[CX3](=O)[OH]",
+        "Dehydration: API alcohol + excipient acid → alkene"
+    ],
+    [
+        "pair_decarboxylation_beta_keto",
+        "[CX3](=O)[#6][CX3](=O)[OH]",
+        "[OX1H-]",
+        "Decarboxylation: API β-keto acid + base/heat"
+    ],
+    [
+        "pair_sulfoxide_reduction",
+        "[#16X3](=[OX1])([#6])[#6]",
+        "[SX1H]",
+        "Sulfoxide reduction: API sulfoxide + excipient thiol"
+    ],
+    [
+        "pair_thioamide_formation",
+        "[CX3](=O)[NX3]",
+        "[SX1H]",
+        "Thioamide: API amide + excipient thiol → thioamide"
+    ],
+    [
+        "pair_vinylation_amine",
+        "[CX3]=[CX3]",
+        "[NX3;H2][#6]",
+        "Vinylation: API vinyl + excipient amine (enamine)"
+    ],
+    [
+        "pair_iminium_formation",
+        "[CX3H1](=O)[#6]",
+        "[NX3]([#6])([#6])[#6]",
+        "Iminium: API aldehyde + excipient tertiary amine → iminium salt"
+    ],
+    [
+        "pair_mannich_reaction",
+        "[#6][CX4][CX3](=O)",
+        "[NX3;H2][#6]",
+        "Mannich: API enolizable carbonyl + excipient amine + CH2O"
+    ],
+    [
+        "pair_pinner_reaction",
+        "[CX2]#[N]",
+        "[CX4;H2][OH]",
+        "Pinner: API nitrile + excipient alcohol → imidate ester"
+    ],
+    [
+        "pair_aldol_condensation",
+        "[CX3](=O)[#6][CX4]",
+        "[CX3H1](=O)[#6]",
+        "Aldol: API enolizable carbonyl + excipient aldehyde"
+    ],
+    [
+        "pair_knoevenagel",
+        "[CX3](=O)[#6][CX3](=O)",
+        "[CX3H1](=O)[#6]",
+        "Knoevenagel: API active methylene + excipient aldehyde"
+    ],
+    [
+        "pair_sulfide_oxidation_peroxide",
+        "[#16X2]([#6])[#6]",
+        "[OX2][OX2]",
+        "Sulfide→sulfoxide: API thioether + excipient peroxide"
+    ],
+    [
+        "pair_sulfide_to_sulfone",
+        "[#16X3](=[OX1])([#6])[#6]",
+        "[OX2][OX2]",
+        "Sulfoxide→sulfone: API sulfoxide + excipient peroxide"
+    ],
+    [
+        "pair_nitro_reduction",
+        "[NX3](=O)=O",
+        "[SX1H]",
+        "Nitro reduction: API nitro + excipient thiol → amine"
+    ],
+    [
+        "pair_nitro_reduction_sugar",
+        "[NX3](=O)=O",
+        "[OX2H][CX4]",
+        "Nitro reduction: API nitro + excipient reducing sugar"
+    ],
+    [
+        "pair_aldehyde_reduction",
+        "[CX3H1](=O)[#6]",
+        "[OX2H][CX4]",
+        "Aldehyde reduction: API aldehyde + excipient reducing sugar"
+    ],
+    [
+        "pair_dimerization_thiol",
+        "[SX1H]",
+        "[OX2][OX2]",
+        "Thiol dimerization: API thiol + O₂/peroxide → disulfide"
+    ],
+    [
+        "pair_oxidative_phenol_dimer",
+        "[OH]c1ccccc1",
+        "[OX2][OX2]",
+        "Phenol dimerization: API phenol + oxidant → biphenol"
+    ],
+    [
+        "pair_formaldehyde_imine",
+        "[CH2]=[OX1]",
+        "[NX3;H2][#6]",
+        "Formaldehyde + amine: from excipient degradation → imine"
+    ],
+    [
+        "pair_formaldehyde_amide",
+        "[CH2]=[OX1]",
+        "[CX3](=O)[NX3]",
+        "Formaldehyde + amide: N-hydroxymethylamide"
+    ],
+    [
+        "pair_formaldehyde_phenol",
+        "[CH2]=[OX1]",
+        "[OH]c1ccccc1",
+        "Formaldehyde + phenol: hydroxymethylphenol"
+    ],
+    [
+        "pair_sucrose_hydrolysis",
+        "[OX2][C@]1(CO)O[C@@H]2[C@@H](O)[C@H](O)[C@@H](CO)O[C@H]2[C@@H](O)[C@H](O)CO",
+        "[OH]",
+        "Sucrose hydrolysis: API sucrose + water/acid → glucose+fructose"
+    ],
+    [
+        "pair_peg_autoxidation",
+        "[#6][OX2][#6]",
+        "[OX1]",
+        "PEG autoxidation: PEG + O₂ → aldehyde/acid/ester"
+    ],
+    [
+        "pair_ascorbate_oxidation",
+        "[OX1]C1=C(O)C(=O)C(=O)C=C1O",
+        "[OX1]",
+        "Ascorbate oxidation: Vitamin C + O₂ → dehydroascorbic acid"
+    ],
+    [
+        "pair_polysorbate_hydrolysis",
+        "[CX3](=O)[OX2][#6]",
+        "[OH]",
+        "Polysorbate hydrolysis: Tween ester + water → fatty acid + sorbitan"
+    ],
+    [
+        "pair_lactone_hydrolysis",
+        "O=C1[CX4,OX2][#6][#6][#6][OX2]1",
+        "[OH]",
+        "Lactone hydrolysis: API lactone + water → hydroxy acid"
+    ],
+    [
+        "pair_lactam_hydrolysis_general",
+        "[#6][NX3]1[#6](=O)[#6][#6][#6]1",
+        "[OH]",
+        "Lactam hydrolysis: cyclic amide + water → amino acid"
+    ],
+    [
+        "pair_sulfonamide_hydrolysis",
+        "[#16X4](=[OX1])(=[OX1])[NX3]",
+        "[CX3](=O)[OH]",
+        "Sulfonamide hydrolysis: API sulfonamide + excipient acid"
+    ],
+    [
+        "pair_phosphonate_hydrolysis",
+        "[#15X4](=[OX1])([OX1H])([#6])",
+        "[OH]",
+        "Phosphonate hydrolysis: API phosphonate + water"
+    ],
+    [
+        "pair_boronic_ester_hydrolysis",
+        "[BX3]([OX2][#6])[OX2][#6]",
+        "[OH]",
+        "Boronic ester hydrolysis: API boronate ester + water"
+    ],
+    [
+        "pair_barbiturate_hydrolysis",
+        "O=C1[#6][NX3]C(=O)[NX3]C1=O",
+        "[OH]",
+        "Barbiturate hydrolysis: API barbiturate + base → ring open"
+    ],
+    [
+        "pair_sulfide_thiol_exchange",
+        "[#16X2][#6]",
+        "[SX1H]",
+        "Sulfide-thiol: API sulfide + excipient thiol → exchange"
+    ],
+    [
+        "pair_amidine_formation",
+        "[CX2]#[N]",
+        "[NX3;H2][#6]",
+        "Amidine: API nitrile + excipient amine → amidine"
+    ],
+    [
+        "pair_guanidine_formation",
+        "[NX3][CX2](=N)[NX2]",
+        "[NX3;H2][#6]",
+        "Guanidine: API cyanamide/imine + excipient amine"
+    ],
+    [
+        "pair_phosphoramidate_hydrolysis",
+        "[NX3][#15](=[OX1])([OX1H])[OX1H]",
+        "[OH]",
+        "Phosphoramidate hydrolysis: P-N bond cleavage"
+    ],
+    [
+        "pair_acyl_glucuronide_hydrolysis",
+        "[CX3](=O)[OX2][C@@H]1[C@@H](O)[C@H](O)[C@@H](CO)O1",
+        "[OH]",
+        "Acyl glucuronide hydrolysis: ester glucuronide + water"
+    ],
+    [
+        "pair_hypochlorite_oxidation",
+        "[OX1]Cl",
+        "[OH]c1ccccc1",
+        "Hypochlorite + phenol: from disinfectant residues"
+    ],
+    [
+        "pair_photo_fries",
+        "[OX2][CX3](=O)c1ccccc1",
+        "[OX2]",
+        "Photo-Fries: aryl ester → o/p-hydroxy ketone (light)"
+    ],
+    [
+        "pair_norrish_type2",
+        "[CX3](=O)[#6][#6][#6]",
+        "[OX2]",
+        "Norrish II: ketone + γ-H → cyclobutanol (light)"
+    ],
+    [
+        "pair_photo_dehalogenation",
+        "c1([Cl,Br,I])ccccc1",
+        "[OX2]",
+        "Photodehalogenation: aryl halide + light → dehalogenation"
+    ],
+    [
+        "pair_photo_isomerization",
+        "[CX3]=[CX3]",
+        "[OX2]",
+        "Photo-isomerization: trans/cis isomerization under light"
+    ],
+    [
+        "pair_photo_oxidation",
+        "[CX3]=[CX3]",
+        "[OX1]",
+        "Photo-oxidation: alkene + O₂ + light → hydroperoxide"
+    ],
+    [
+        "pair_metal_chelation_edta",
+        "OC(=O)CN(CCN(CC(=O)O)CC(=O)O)CC(=O)O",
+        "[#24252628]",
+        "EDTA chelation: sequesters Ca/Mg/Fe/Zn metal ions"
+    ],
+    [
+        "pair_metal_chelation_citrate",
+        "OC(=O)CC(O)(C(=O)O)CC(=O)O",
+        "[#24252628]",
+        "Citrate chelation: citrate + di/trivalent metal"
+    ],
+    [
+        "pair_thiol_metal_complex",
+        "[SX1H]",
+        "[*:999999]",
+        "Thiol-metal: thiol binds Hg/Ag/Cu/Fe/Zn"
+    ],
+    [
+        "pair_amine_metal_complex",
+        "[NX3;H2][#6]",
+        "[*:999999]",
+        "Amine-metal: amine coordinates Cu/Fe/Zn"
+    ],
+    [
+        "pair_acid_metal_complex",
+        "[CX3](=O)[OH]",
+        "[*:999999]",
+        "Acid-metal: carboxylate coordinates metal ions"
+    ],
+    [
+        "pair_charge_transfer_complex",
+        "c1ccccc1",
+        "c1ccccc1[O,N]",
+        "Charge-transfer: aromatic donor + acceptor complex"
+    ],
+    [
+        "pair_lipid_peroxidation",
+        "[CX3]=[CX3][CX4]",
+        "[OX1]",
+        "Lipid peroxidation: unsaturated + O₂ → aldehyde"
+    ],
+    [
+        "pair_strecker_degradation",
+        "[CX3](=O)[#6]",
+        "[NX3;H2][#6][CX3](=O)[OH]",
+        "Strecker: carbonyl + amino acid → aldehyde + CO₂"
+    ],
+    [
+        "pair_epimerization_base",
+        "[C@]([#6])([#6])([#6])[#6]",
+        "[OH-]",
+        "Epimerization: chiral center inversion under base"
+    ],
+    [
+        "pair_racemization",
+        "[C@]([#6])([#6])([#6])[#6]",
+        "[OX1]",
+        "Racemization: loss of optical activity via enolization"
+    ],
+    [
+        "pair_oxidative_dealkylation",
+        "[OX2][#6][#6]",
+        "[OX1]",
+        "O-dealkylation: ether → alcohol via oxidative metabolism"
+    ],
+    [
+        "pair_salt_formation_amine_acid",
+        "[NX3]([#6])([#6])[#6]",
+        "[CX3](=O)[OH]",
+        "Salt formation: tertiary amine + acid → salt"
+    ],
+    [
+        "pair_salt_formation_acid_base",
+        "[CX3](=O)[OH]",
+        "[NX3]([#6])([#6])[#6]",
+        "Salt formation: API acid + excipient base amine salt"
+    ],
+    [
+        "pair_azo_reduction",
+        "[NX2]=[NX2]",
+        "[SX1H]",
+        "Azo reduction: azo bond + thiol → hydrazines/amines"
+    ],
+    [
+        "pair_thiocyanate_formation",
+        "[SX1H]",
+        "[CX2]#[N]",
+        "Thiocyanate: thiol + cyanide → thiocyanate"
+    ],
+    [
+        "pair_cyanoethylation",
+        "[CX2]#[N][CX3]=[CX3]",
+        "[NX3;H2][#6]",
+        "Cyanoethylation: acrylonitrile + amine → β-cyanoethylamine"
+    ],
+    [
+        "pair_vinyl_sulfone_addition",
+        "[CX3]=[CX3][SX4](=[OX1])(=[OX1])",
+        "[NX3;H2][#6]",
+        "Vinyl sulfone: API vinyl sulfone + excipient amine (Michael)"
+    ],
+    [
+        "pair_enamine_hydrolysis",
+        "[NX3][CX3]=[CX3]",
+        "[OH]",
+        "Enamine hydrolysis: enamine + water → carbonyl + amine"
+    ],
+    [
+        "pair_imine_hydrolysis",
+        "[CX3]=[NX2]",
+        "[OH]",
+        "Imine hydrolysis: imine + water → carbonyl + amine"
+    ],
+    [
+        "pair_hydrazone_hydrolysis",
+        "[CX3]=[NX3][NX3]",
+        "[OH]",
+        "Hydrazone hydrolysis: hydrazone + water → carbonyl + hydrazine"
+    ],
+    [
+        "pair_oxime_hydrolysis",
+        "[CX3]=[NX3][OX2H]",
+        "[OH]",
+        "Oxime hydrolysis: oxime + water → carbonyl + hydroxylamine"
+    ],
+    [
+        "pair_acetal_hydrolysis_acid",
+        "[#6][OX2][#6][OX2][#6]",
+        "[CX3](=O)[OH]",
+        "Acetal hydrolysis: acetal + acid → carbonyl + alcohol"
+    ],
+    [
+        "pair_epoxide_hydrolysis",
+        "C1OC1",
+        "[OH]",
+        "Epoxide hydrolysis: epoxide + water → diol"
+    ],
+    [
+        "pair_michael_addition_hydroxyl",
+        "[CX3]=[CX3][CX3](=[OX1])",
+        "[CX4;H2][OH]",
+        "Michael addition: API α,β-unsat carbonyl + excipient alcohol"
+    ],
+    [
+        "pair_michael_addition_water",
+        "[CX3]=[CX3][CX3](=[OX1])",
+        "[OH]",
+        "Michael addition: API α,β-unsat carbonyl + water (hydration)"
+    ],
+    [
+        "pair_thioester_hydrolysis",
+        "[CX3](=O)[SX2]",
+        "[OH]",
+        "Thioester hydrolysis: thioester + water → acid + thiol"
+    ],
+    [
+        "pair_boronate_ester_formation",
+        "[BX3]([OX1H])[OX1H]",
+        "[OX2H][#6][CX4][#6][OX2H]",
+        "Boronate ester: boronic acid + diol → cyclic ester"
+    ],
+    [
+        "pair_sydnone_hydrolysis",
+        "O=C1C=NN1O",
+        "[OH]",
+        "Sydnone hydrolysis: sydnone + base → hydrazine + CO₂"
+    ],
+    [
+        "pair_phosphine_oxidation",
+        "[#15X3]([#6])([#6])[#6]",
+        "[OX1]",
+        "Phosphine oxidation: phosphine + O₂ → phosphine oxide"
+    ],
+    [
+        "pair_nitrone_formation",
+        "[NX3+][OX1-]",
+        "[CX3H1](=O)[#6]",
+        "Nitrone: N-oxide + aldehyde → nitrone (spin trap)"
+    ],
+    [
+        "pair_azide_alkyne_cycloadd",
+        "[NX3]=[NX2]=[NX2]",
+        "[CX2]#[CX2]",
+        "Click chemistry: azide + alkyne → triazole (Cu-free strain)"
+    ]
+]
