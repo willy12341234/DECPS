@@ -68,11 +68,42 @@ Instead of relying on simple drug names, the pipeline translates API and excipie
 
 ---
 
-## 📂 Data Sources & Datasets
+## 📂 Data Sources & Datasets / 数据集与数据源
 
-### 🎁 Free Shared Dataset (`data.csv`)
-To support open science, I have **scraped, cleaned, and compiled a large-scale drug-excipient compatibility dataset** containing **66,654** pairs (covering 3,582 APIs and 387 excipients), shared here completely for free. 
+### 🎁 共享数据集文件说明 (`data.csv`)
 
+> ⚠️ **重要提示**：本仓库中共享的 `data.csv` 并非最终训练模型所直接使用的完整高维特征文件（最终模型输入需要经过 Pipeline 转化为 13,060 维的特征向量），而是**自己整理的一份原辅料相关基础数据文件**。该文件虽然以 `.csv` 命名，但**其实际格式为 Excel 工作簿**（建议使用 Excel/Pandas 直接读取，或重命名为 `.xlsx` 后打开）。
+>
+> 此外，该数据集不仅可以用于原辅料相容性预测，由于其中包含了丰富的分子理化性质特征与配对关系，**在药物研发、分子性质预测等其他相关项目中也可以直接使用**。
+
+#### 📊 数据集结构总结 (Excel Sheets)
+
+`data.csv` (实际为 Excel) 包含以下三个工作表（Sheets）：
+
+1. **`核心数据` (Core Data)**
+   * **作用**：记录了原辅料配对的原始兼容性状态与来源。
+   * **包含字段**：
+     * `API_Name`: 活性药物成分（API）名称
+     * `API_SMILES`: API 的 SMILES 结构式
+     * `Excipient_Name`: 辅料名称
+     * `Excipient_SMILES`: 辅料的 SMILES 结构式
+     * `Compatibility`: 兼容性标签（`1` 为不兼容/有风险，`0` 为兼容）
+     * `Source`: 数据来源（如：文献扩充数据集等）
+
+2. **`分子特征` (Molecular Features)**
+   * **作用**：预计算的分子二维及物理化学描述符特征，可用于机器学习特征分析及其他化学性质预测项目。
+   * **包含字段**：
+     * API 与辅料的分子量 (`MW`)、油水分配系数 (`logP`)、氢键供体/受体数 (`HBD`/`HBA`)、拓扑极性表面积 (`TPSA`)、摩尔折射率 (`MR`)、酸碱解离常数 (`pKa_acid`/`pKa_base`)、原子数、重原子数、旋转键数、环数等。
+     * API 与辅料之间的理化性质差异值，如 `ΔlogP`、`ΔTPSA` 等。
+     * 目标分类标签 `Compatibility`。
+
+3. **`统计信息` (Statistical Summary)**
+   * **作用**：数据集的基础统计数据。
+   * **核心指标**：总数据量 `61,411` 行，包含 `3,382` 个唯一的 API。
+
+---
+
+### 📚 数据来源 (Data Sources)
 The dataset is compiled and curated from various public records and studies:
 * Scraped EMA / Swissmedic public registry formulation logs
 * FDA Approved Formulations databases
@@ -80,7 +111,7 @@ The dataset is compiled and curated from various public records and studies:
 * Literature-extracted incompatible pairings
 
 The dataset is shared as:
-* `data.csv` (curated CSV dataset)
+* `data.csv` (Curated Excel dataset renamed to .csv, see instructions above)
 * `public_compatibility_database.csv` (raw baseline database)
 
 ---
