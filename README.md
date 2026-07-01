@@ -51,11 +51,11 @@ Instead of relying on simple drug names, the pipeline translates API and excipie
 
 | Feature Group | Dimensions | Description |
 |--------------|-----------|-------------|
-| Morgan ECFP (API & Exc) | $2 \times 2048$ | Circular fingerprints (radius 2) |
-| MACCS Keys (API & Exc) | $2 \times 166$ | 166 structural keys for functional groups |
-| RDKit FP (API & Exc) | $2 \times 2048$ | Path-based molecular connectivity |
-| Basic & Extended Descriptors | $2 \times (7 + 17)$ | MW, logP, HBD, HBA, TPSA, MR, fcsp3, etc. |
-| Custom Group & Reactivity | $2 \times (20 + 28)$ | Sulfonate, phosphate, hydrolysis/oxidation reactivity |
+| Morgan ECFP (API & Exc) | $3 \times 2048$ | Circular fingerprints (radius 2) |
+| MACCS Keys (API & Exc) | $3 \times 166$ | 166 structural keys for functional groups |
+| RDKit FP (API & Exc) | $3 \times 2048$ | Path-based molecular connectivity |
+| Basic & Extended Descriptors | $3 \times (7 + 17)$ | MW, logP, HBD, HBA, TPSA, MR, fcsp3, etc. |
+| Custom Group & Reactivity | $3 \times (20 + 28)$ | Sulfonate, phosphate, hydrolysis/oxidation reactivity |
 | Environment & Interaction Terms | $5 + 15$ | Temperature, Humidity, Light, Storage Days & cross-products |
 | SMARTS Pairwise Rules | 17 | Core reactive group matches (e.g. Maillard reaction, esterification) |
 
