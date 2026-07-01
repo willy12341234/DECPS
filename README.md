@@ -90,7 +90,7 @@ The `data.csv` (actually Excel) contains the following three sheets:
 
 1. **`核心数据` (Core Data)**
    * **Purpose**: Records original compatibility labels and sources.
-   * **Columns**: `API_Name`, `API_SMILES`, `Excipient_Name`, `Excipient_SMILES`, `Compatibility` (1 = high risk/incompatible, 0 = compatible), `Source`.
+   * **Columns**: `API_Name`, `API_SMILES`, `Excipient_Name`, `Excipient_SMILES`, `Compatibility` (1 = compatible, 0 = incompatible/high risk), `Source`.
 2. **`分子特征` (Molecular Features)**
    * **Purpose**: Pre-computed 2D molecular descriptors, useful for feature analysis and chemistry-related modeling.
    * **Columns**: MW, logP, HBD, HBA, TPSA, MR, pKa, atom count, ring count, etc. for both API and excipient, along with property delta terms (e.g. `ΔlogP`, `ΔTPSA`) and `Compatibility` labels.
@@ -246,7 +246,7 @@ Licensed under the **MIT License**.
      * `API_SMILES`: API 的 SMILES 结构式
      * `Excipient_Name`: 辅料名称
      * `Excipient_SMILES`: 辅料的 SMILES 结构式
-     * `Compatibility`: 兼容性标签（`1` 为不兼容/有风险，`0` 为兼容）
+     * `Compatibility`: 兼容性标签（`1` 为相容，`0` 为不相容）
      * `Source`: 数据来源（如：文献扩充数据集等）
 
 2. **`分子特征` (Molecular Features)**
